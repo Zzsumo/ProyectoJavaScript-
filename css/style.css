@@ -13,8 +13,8 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-evenly;
-  gap: 20%;
+  justify-content: center;
+  gap: 25%;
   align-items: center;
   padding: 5px 10px;
   margin-top: 2vh;
@@ -50,10 +50,9 @@ body {
   color: #ff9800; /* Color al pasar el cursor */
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .navbar-menu {
-    gap: 15px; /* Ajusta el espacio entre ítems en pantallas más pequeñas */
+    gap: 15px;
   }
 }
 
