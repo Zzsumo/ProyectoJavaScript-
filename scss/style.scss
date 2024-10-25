@@ -56,6 +56,14 @@ body {
   }
 }
 
+.banner {
+  background-image: url(../assets/FlgZTFEXgAEr2Wh.jpg);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
 @media (max-width: 768px) {
   .navbar-menu {
     gap: 15px;
