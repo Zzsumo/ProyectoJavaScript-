@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Estilos generales */
 * {
   margin: 0;
@@ -11,6 +10,7 @@ body {
 }
 
 .navbar {
+  background-color: white;
   display: flex;
   justify-content: center;
   gap: 25%;
@@ -34,7 +34,7 @@ body {
 .navbar-menu {
   list-style: none;
   display: flex;
-  gap: 30px; /* Espacio entre los elementos del menú */
+  gap: 30px;
 }
 .navbar-menu li a {
   color: black;
@@ -43,20 +43,17 @@ body {
   font-weight: bold;
 }
 .navbar-menu li a:hover {
-  color: white; /* Color al pasar el cursor */
+  color: blueviolet;
 }
 
 .banner {
+  text-align: center;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 65vh;
+  height: 75vh;
   width: 100%;
   background-image: url(/assets/bck.jpg);
-}
-
-.pre-navbar {
-  background-color: black;
 }
 
 @media (max-width: 768px) {
@@ -64,6 +61,15 @@ body {
     gap: 15px;
   }
 }
+.titulo {
+  margin-top: 17vh;
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  user-select: none;
+}
+
 /* Estilos generales */
 
 /*# sourceMappingURL=style.css.map */
