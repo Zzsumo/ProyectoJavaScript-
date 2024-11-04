@@ -1,4 +1,69 @@
+@charset "UTF-8";
 /* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 25%;
+  align-items: center;
+  padding: 5px 10px;
+}
+.navbar-logo img {
+  height: 25px;
+}
+.navbar-logo .logo {
+  height: 45px;
+}
+.navbar .lado-derecho {
+  display: flex;
+  gap: 45px;
+}
+.navbar .lado-izquierdo {
+  display: flex;
+  align-items: center;
+}
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Espacio entre los elementos del menú */
+}
+.navbar-menu li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar-menu li a:hover {
+  color: white; /* Color al pasar el cursor */
+}
+
+.banner {
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 65vh;
+  width: 100%;
+  background-image: url(/assets/bck.jpg);
+}
+
+.pre-navbar {
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    gap: 15px;
+  }
+}
 /* Estilos generales */
 
 /*# sourceMappingURL=style.css.map */

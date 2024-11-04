@@ -62,7 +62,7 @@ const agregarTarea = ({
   tareas.push({ nombre, descipcion, fechaDeInicio, plazoDeEntrega });
 };
 
-const mostrarTareas = () => {
+/* const mostrarTareas = () => {
   let id = 1;
   let objeto = "";
   for (i of tareas) {
@@ -142,3 +142,4 @@ const main = () => {
   }
 };
 main();
+ */
