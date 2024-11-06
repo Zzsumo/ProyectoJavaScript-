@@ -4,7 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tasks</title>
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../assets/fisica_logo.png" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo lado-izquierdo">
+          <img class="logo" src="../assets/fisica_logo.png" alt="" />
+          <p>Tasks</p>
+        </div>
+
+        <ul class="navbar-menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="tasks.html">Tareas</a></li>
+        </ul>
+
+        <div class="navbar-logo lado-derecho">
+          <img src="../assets/usuario.png" alt="" />
+        </div>
+      </nav>
+    </header>
+    <h1>Empieza con tus tareas!</h1>
+    <main class="sec_tareas">
+      <div class="nomTarea">
+        <label for="nombreTarea">Ingresar Tarea</label>
+        <input type="text" id="nombreTarea" placeholder="Tarea" />
+      </div>
+      <div class="prioridadTarea">
+        <label for="prioTarea">Establece prioridad</label>
+        <select name="prioridad" id="prioTarea">
+          <option value="Alta">Alta</option>
+          <option value="Media">Media</option>
+          <option value="Baja">Baja</option>
+        </select>
+      </div>
+      <div class="fechaTarea">
+        <label for="fechaTarea">Fecha de vencimiento</label>
+        <input type="date" id="fechTarea" />
+      </div>
+      <div class="btnTarea">
+        <button id="btnAgregar">Agregar</button>
+      </div>
+    </main>
+    <section class="tarasCargadas">
+      <h2>Tareas Cargadas</h2>
+      <span id="listadoTareas"></span>
+    </section>
+    <script type="module" src="../scripts/app.js"></script>
+    <script type="module" src="../scripts/ui.js"></script>
+    <script type="module" src="../scripts/carts.js"></script>
+  </body>
 </html>

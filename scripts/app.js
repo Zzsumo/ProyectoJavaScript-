@@ -51,16 +51,16 @@
 // };
 // comprar();
 
-const tareas = [];
+// const tareas = [];
 
-const agregarTarea = ({
-  nombre,
-  descipcion,
-  fechaDeInicio,
-  plazoDeEntrega,
-}) => {
-  tareas.push({ nombre, descipcion, fechaDeInicio, plazoDeEntrega });
-};
+// const agregarTarea = ({
+//   nombre,
+//   descipcion,
+//   fechaDeInicio,
+//   plazoDeEntrega,
+// }) => {
+//   tareas.push({ nombre, descipcion, fechaDeInicio, plazoDeEntrega });
+// };
 
 /* const mostrarTareas = () => {
   let id = 1;
