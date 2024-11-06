@@ -20,6 +20,7 @@
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 5% auto;
+    background-color: aliceblue;
     h2 {
       margin: 20px;
       font-size: 3em;
@@ -35,7 +36,7 @@
       user-select: none;
     }
     &:hover {
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.922);
       transition: 0.6s;
     }
   }
