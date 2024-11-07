@@ -54,7 +54,7 @@ body {
   background-attachment: fixed;
   height: 75vh;
   width: 100%;
-  background-image: url(/assets/bck.jpg);
+  background-image: url(../assets/bck.jpg);
 }
 
 @media (max-width: 768px) {
