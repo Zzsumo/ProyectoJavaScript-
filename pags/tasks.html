@@ -39,8 +39,8 @@
           <option value="Baja">Baja</option>
         </select>
       </div>
-      <div class="fechaTarea">
-        <label for="fechaTarea">Fecha de vencimiento</label>
+      <div class="fTarea">
+        <label for="fechTarea">Fecha de vencimiento</label>
         <input type="date" id="fechTarea" />
       </div>
       <div class="btnTarea">
@@ -49,10 +49,12 @@
     </main>
     <section class="tarasCargadas">
       <h2>Tareas Cargadas</h2>
-      <span id="listadoTareas"></span>
+      <div class="taras">
+        <ul id="listaTareas"></ul>
+        <br />
+        <span id="tareasPendientes"></span>
+      </div>
     </section>
-    <script type="module" src="../scripts/app.js"></script>
-    <script type="module" src="../scripts/ui.js"></script>
-    <script type="module" src="../scripts/carts.js"></script>
+    <script src="../scripts/app.js"></script>
   </body>
 </html>
