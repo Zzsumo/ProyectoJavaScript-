@@ -5,8 +5,8 @@ const btnAgregar = document.getElementById("btnAgregar");
 const listaTareas = document.getElementById("listaTareas");
 const tareasPendientes = document.getElementById("tareasPendientes");
 
-const tareas = [];
-
+const tareas = JSON.parse(localStorage.getItem("tareas")) || [];
+let cont = 0;
 const renderizarTareas = () => {
   listaTareas.innerHTML = "";
   tareas.forEach((tareas) => {
@@ -29,11 +29,13 @@ const agregarTarea = () => {
   const vencimiento = fechTarea.value;
   if (nombre && prioridad && vencimiento) {
     tareas.push({
+      id: cont++,
       nombre: nombre,
       prioridad: prioridad,
       vencimiento: vencimiento,
       completada: false,
     });
+    localStorage.setItem("tareas", JSON.stringify(tareas));
     renderizarTareas();
   } else {
     alert("Datos invalidos");
