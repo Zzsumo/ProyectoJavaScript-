@@ -25,36 +25,41 @@
         </div>
       </nav>
     </header>
-    <h1>Empieza con tus tareas!</h1>
-    <main class="sec_tareas">
-      <div class="nomTarea">
-        <label for="nombreTarea">Ingresar Tarea</label>
-        <input type="text" id="nombreTarea" placeholder="Tarea" />
-      </div>
-      <div class="prioridadTarea">
-        <label for="prioTarea">Establece prioridad</label>
-        <select name="prioridad" id="prioTarea">
-          <option value="Alta">Alta</option>
-          <option value="Media">Media</option>
-          <option value="Baja">Baja</option>
-        </select>
-      </div>
-      <div class="fTarea">
-        <label for="fechTarea">Fecha de vencimiento</label>
-        <input type="date" id="fechTarea" />
-      </div>
-      <div class="btnTarea">
-        <button id="btnAgregar">Agregar</button>
-      </div>
-    </main>
-    <section class="tarasCargadas">
-      <h2>Tareas Cargadas</h2>
-      <div class="taras">
-        <ul id="listaTareas"></ul>
+
+    <main class="tareas">
+      <h1>Empieza con tus tareas!</h1>
+      <section class="carga_datos">
+        <div class="nomTarea flex">
+          <label for="nombreTarea">Tarea:</label>
+          <input type="text" id="nombreTarea" placeholder="Nombre..." />
+        </div>
         <br />
-        <span id="tareasPendientes"></span>
-      </div>
-    </section>
+        <div class="prioridadTarea flex">
+          <label for="prioTarea">Prioridad:</label>
+          <select name="prioridad" id="prioTarea">
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+          </select>
+        </div>
+        <br />
+        <div class="fTarea flex">
+          <label for="fechTarea">Vencimiento:</label>
+          <input type="date" id="fechTarea" />
+        </div>
+        <div class="btnTarea">
+          <button id="btnAgregar">Agregar</button>
+        </div>
+      </section>
+      <section class="tarasCargadas">
+        <h2>Tareas Cargadas:</h2>
+        <div class="taras">
+          <ul id="listaTareas"></ul>
+          <br />
+          <span id="tareasPendientes"></span>
+        </div>
+      </section>
+    </main>
     <script src="../scripts/app.js"></script>
   </body>
 </html>
