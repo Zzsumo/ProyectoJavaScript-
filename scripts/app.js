@@ -39,8 +39,23 @@ const agregarTarea = () => {
       vencimiento: vencimiento,
       completada: false,
     });
+
     localStorage.setItem("tareas", JSON.stringify(tareas));
     renderizarTareas();
+    Toastify({
+      text: "Tarea Agregada",
+      duration: 3000,
+      destination: "https://github.com/apvarun/toastify-js",
+      newWindow: true,
+      close: true,
+      gravity: "bottom",
+      position: "right",
+      stopOnFocus: true,
+      style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+      },
+      onClick: function () {},
+    }).showToast();
   } else {
     alert("Datos invalidos");
   }
@@ -51,6 +66,20 @@ const eliminarTarea = (id) => {
     tareas.splice(ind, 1);
     localStorage.setItem("tareas", JSON.stringify(tareas));
     renderizarTareas();
+    Toastify({
+      text: "Tarea Eliminada",
+      duration: 3000,
+      destination: "https://github.com/apvarun/toastify-js",
+      newWindow: true,
+      close: true,
+      gravity: "bottom",
+      position: "left",
+      stopOnFocus: true,
+      style: {
+        background: "red",
+      },
+      onClick: function () {},
+    }).showToast();
   }
 };
 const pendientes = () => {
