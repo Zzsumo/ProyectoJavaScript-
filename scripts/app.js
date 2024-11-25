@@ -16,7 +16,7 @@ const renderizarTareas = () => {
     checkbox.checked = tareas.completada;
     checkbox.addEventListener("change", () => completada(checkbox, tareas.id));
     const infoTarea = document.createElement("span");
-    infoTarea.innerHTML = ` ${tareas.nombre} | ${tareas.prioridad} | <strong>Venc: ${tareas.vencimiento}</strong>`;
+    infoTarea.innerHTML = ` ${tareas.nombre} | ${tareas.prioridad} | <strong>Venc: ${tareas.vencimiento}</strong> `;
     const btnEliminar = document.createElement("button");
     btnEliminar.textContent = "Eliminar";
     btnEliminar.addEventListener("click", () => eliminarTarea(tareas.id));
