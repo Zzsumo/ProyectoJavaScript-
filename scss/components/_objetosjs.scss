@@ -1,0 +1,27 @@
+.tareasCargadas {
+  text-align: center;
+  border-radius: 10px;
+  width: 55%;
+  height: auto;
+  margin: 20px auto;
+  background-color: #f6d5a4;
+  border: 1px solid black;
+  h2 {
+    padding-top: 15px;
+  }
+  .taras {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .item {
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 45px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffd88b;
+  }
+}
