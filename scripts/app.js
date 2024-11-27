@@ -13,14 +13,15 @@ const renderizarTareas = () => {
     const itemTarea = document.createElement("li");
     itemTarea.classList.add("item");
     const checkbox = document.createElement("input");
-
     checkbox.type = "checkbox";
+    checkbox.classList.add("cajita");
     checkbox.checked = tareas.completada;
     checkbox.addEventListener("change", () => completada(checkbox, tareas.id));
     const infoTarea = document.createElement("span");
     infoTarea.innerHTML = `  ${tareas.nombre}  |  ${tareas.prioridad} |  <strong>Venc: ${tareas.vencimiento}</strong> `;
     const btnEliminar = document.createElement("button");
     btnEliminar.textContent = "Eliminar";
+    btnEliminar.classList.add("boton");
     btnEliminar.addEventListener("click", () => eliminarTarea(tareas.id));
     itemTarea.append(checkbox);
     itemTarea.append(infoTarea);
@@ -86,7 +87,7 @@ const eliminarTarea = (id) => {
 };
 const pendientes = () => {
   const pendientes = tareas.filter((tarea) => !tarea.completada).length;
-  tareasPendientes.textContent = `Tareas pendientes:${pendientes}`;
+  tareasPendientes.textContent = `Tareas pendientes: ${pendientes}`;
 };
 const completada = (checkbox, id) => {
   const comp = tareas.find((tarea) => tarea.id === id);

@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  user-select: none;
 }
 
 body {
@@ -124,9 +125,12 @@ body {
   margin: 20px auto;
   background-color: #f6d5a4;
   border: 1px solid black;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.922);
 }
 .tareasCargadas h2 {
   padding-top: 15px;
+  pointer-events: none;
+  user-select: none;
 }
 .tareasCargadas .taras {
   padding: 10px;
@@ -134,14 +138,34 @@ body {
   text-align: center;
 }
 .tareasCargadas .item {
+  user-select: none;
   border: solid 1px black;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 45px;
-  margin: 15px;
+  margin: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #ffd88b;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.tareasCargadas .item:hover {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.922);
+  transition: 0.3s;
+}
+.tareasCargadas .item .boton {
+  border-radius: 4px;
+  height: 25px;
+  width: 65px;
+  cursor: pointer;
+}
+.tareasCargadas .item .boton:hover {
+  transition: 0.2s;
+  background-color: red;
+  color: floralwhite;
+}
+.tareasCargadas .item .cajita {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -180,7 +204,6 @@ body {
   color: black;
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   pointer-events: none;
-  user-select: none;
 }
 .sect_1 .presentacion .txt_us {
   margin: 20px;
@@ -194,17 +217,28 @@ body {
 }
 
 .tareas {
+  background-color: #304261;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10vh;
+  gap: 40px;
 }
 .tareas h1 {
   font-size: 3rem;
   padding-bottom: 8vh;
 }
 .tareas .carga_datos {
-  padding-bottom: 3vh;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.922);
+  background-color: rgb(176, 196, 214);
 }
 .tareas .carga_datos .flex {
   display: table-caption;
@@ -215,9 +249,10 @@ body {
 .tareas .carga_datos .btnTarea #btnAgregar {
   cursor: pointer;
   height: 45px;
-  width: 100%;
+  width: 100px;
 }
 .tareas .carga_datos .btnTarea #btnAgregar:hover {
+  border-radius: 5px;
   font-size: 1rem;
   color: azure;
   background-color: rgba(0, 98, 255, 0.689);
